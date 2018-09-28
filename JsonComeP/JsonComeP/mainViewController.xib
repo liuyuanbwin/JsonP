@@ -17,19 +17,37 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEQ-Sw-CNk">
-                    <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                <scrollView borderType="line" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEQ-Sw-CNk">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="242"/>
                     <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="vDg-lm-hhQ">
-                        <rect key="frame" x="1" y="1" width="463" height="270"/>
+                        <rect key="frame" x="1" y="1" width="463" height="240"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView drawsBackground="NO" importsGraphics="NO" verticallyResizable="YES" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="9xX-5z-Ggt">
-                                <rect key="frame" x="0.0" y="0.0" width="463" height="270"/>
+                                <rect key="frame" x="0.0" y="0.0" width="463" height="240"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="textColor" red="0.2801960007" green="0.77980250630000003" blue="0.24985707679999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <size key="minSize" width="463" height="270"/>
+                                <size key="minSize" width="463" height="240"/>
                                 <size key="maxSize" width="480" height="10000000"/>
+                                <attributedString key="textStorage">
+                                    <fragment>
+                                        <string key="content">2018-09-28 19:06:12.100490+0800 JsonComeP[90641:7232499] MessageTracer: load_domain_whitelist_search_tree:73: Search tree file's format version number (0) is not supported
+2018-09-28 19:06:12.100537+0800 JsonComeP[90641:7232499] MessageTracer: Falling back to default whitelist</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="11" name="Menlo-Bold"/>
+                                            <integer key="NSLigature" value="0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="27.149999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="27.149999618530273">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <color key="insertionPointColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </textView>
                         </subviews>
@@ -40,16 +58,16 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </scroller>
                     <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="ZeD-Wf-X34">
-                        <rect key="frame" x="464" y="1" width="15" height="270"/>
+                        <rect key="frame" x="464" y="1" width="15" height="240"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </scroller>
                 </scrollView>
             </subviews>
             <constraints>
                 <constraint firstItem="iEQ-Sw-CNk" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="AQ3-qn-ouT"/>
-                <constraint firstAttribute="bottom" secondItem="iEQ-Sw-CNk" secondAttribute="bottom" id="G1Q-dS-tov"/>
+                <constraint firstAttribute="bottom" secondItem="iEQ-Sw-CNk" secondAttribute="bottom" id="HdB-UA-m91"/>
                 <constraint firstAttribute="trailing" secondItem="iEQ-Sw-CNk" secondAttribute="trailing" id="Ttb-Ml-Pe8"/>
-                <constraint firstItem="iEQ-Sw-CNk" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="lTF-qC-CSV"/>
+                <constraint firstItem="iEQ-Sw-CNk" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="30" id="lTF-qC-CSV"/>
             </constraints>
         </customView>
     </objects>

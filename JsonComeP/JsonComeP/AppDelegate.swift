@@ -21,7 +21,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         mainWindow.setUI()
         
         mainWindowController = MainWindowController(window: mainWindow)
-        mainWindowController?.windowDidLoad();
+        mainWindowController?.windowDidLoad()
         mainViewController_.windowController = mainWindowController
         mainWindowController?.showWindow(nil)
     }

@@ -12,8 +12,12 @@ class MainWindow: NSWindow {
     
     public func setUI() {
         self.isOpaque = false
-
-        self.backgroundColor = NSColor(red: 0.1, green: 0.0, blue: 0.0, alpha: 0)
-        self.titlebarAppearsTransparent = true
+        self.alphaValue = 0.9
+        self.backgroundColor = NSColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.1)
+        //self.titlebarAppearsTransparent = true
+        self.hasShadow = false
+     //   self.styleMask = .fullSizeContentView
+        self.ignoresMouseEvents = true
     }
+    
 }
